@@ -1,0 +1,82 @@
+@import '../../responsive.scss';
+
+.searchBar{
+    .searchType{
+       
+        button{
+            padding: 16px 36px;
+            border: 1px solid #999;
+            border-bottom: none;
+            text-transform: capitalize;
+            cursor: pointer;
+            &.active{
+                background-color: black;
+                color: #fff;
+                border-color: black;
+            }
+            &:first-child{
+                border-top-left-radius: 5px;
+                border-right: none;
+            }
+            &:last-child{
+                border-top-right-radius: 5px;
+                border-left: none;
+            }
+           
+        }
+    }
+    form{
+        height: 64px;border: 1px solid #999;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        gap: 5px;
+        
+        @include sm{
+            border: none;
+            flex-direction: column;
+        }
+        input{
+            border: none;
+            width: 200px;
+            padding: 0 10px;
+            outline: none;
+            @include lg{
+                padding: 0 5px;
+                &:nth-child(2),:nth-child(3){
+                    width: 140px;
+                }
+            }
+            @include md{
+                width: 200px !important;
+                &:nth-child(2),:nth-child(3){
+                    width: 200px !important;
+                }
+            }
+            @include sm{
+                padding: 20px;
+                border: 1px solid #999;
+                width: auto !important;
+                
+                    &:nth-child(2),
+                    :nth-child(3) {
+                        width: auto !important;
+                    }
+            }
+
+        }
+        button{
+            border: none;
+            background: #fece51;
+            flex: 1;
+            cursor: pointer;
+            @include sm {
+                padding: 10px;
+                }
+            img{
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import '../../responsive.scss';
+.list__page{
+    display: flex;
+    height: 100%;
+    @include md{
+        flex-direction: column;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+   
+    .list__container{
+        flex: 3;
+        height: 100%;
+        @include md {
+                flex: none;
+                height: max-content;
+            }
+      
+
+        .wrapper{
+            height: 100%;
+            padding-right: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding-bottom: 50px;
+            overflow-y: scroll;
+                -ms-overflow-style: none;
+                /* Internet Explorer 10+ */
+                scrollbar-width: none;
+
+                &::-webkit-scrollbar {
+                        display: none;
+                        /* Safari and Chrome */
+                    }
+            @include sm{
+                gap: 35px;
+            }
+        }
+    }
+    .map__container{
+        flex: 2;
+        height: 100%;
+        width: 100%;
+        background: #fcf5f3;
+        @include md{
+                flex: none;
+                height: 400px;
+                margin-bottom: 50px;
+        }
+        
+    }
+}
+
+.leaflet-popup-content{
+    width: 200px !important;
+}

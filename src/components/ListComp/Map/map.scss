@@ -1,0 +1,60 @@
+.map{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.popup__conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .popup__img__container{
+            height: 134px;
+                border-radius: 8px;
+                width: 209px;
+                overflow: hidden;
+        img{
+            height: 100% !important;
+            width: 100% !important;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+                scale: 1.02;
+            }
+        }
+    }
+    .popup__text__container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        h3{
+            font-size: 16px;
+            font-weight: 600;
+            transition: all .5s ease;
+            &:hover{
+                scale: 1.01;
+            }
+        }
+        .features{
+            display: flex;
+            gap: 10px;
+            .feature{
+                span{
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+            }
+
+        }
+        .price{
+            font-size: 20px;
+                font-weight: 300;
+                padding: 5px;
+                border-radius: 5px;
+                background: rgba(254, 205, 81, 0.438);
+                width: max-content;
+
+        }
+    }
+}

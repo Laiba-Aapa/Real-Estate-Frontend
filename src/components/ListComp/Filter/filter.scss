@@ -1,0 +1,75 @@
+@import '../../../responsive.scss';
+.filter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h1{
+
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        label{
+            font-size: 14px;
+        }
+
+        input,select{
+            padding: 10px;
+            width: 100px;
+            border: 1px solid #e0e0e0;
+            outline: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    }
+    .filter__top{
+        .item{
+            input{
+                width: 100%;
+            }
+        }
+    }
+    .filter__bottom{
+        display: flex;
+        // justify-content: space-between;
+        gap: 10px;
+        @include sm {
+                flex-direction: column;
+                gap: 20px;
+            }
+        button{
+            width: 100px;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            background: #fece51;
+
+            @include mob{
+                    width: 80px;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                    background: #fece51;
+                    height: 44px;
+            }
+            
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .item.button label{
+            visibility: hidden;
+        }
+        .filter__left,.filter__right{
+            display: flex;
+            gap: 20px;
+            
+        }
+
+    }
+}
