@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
 
-const user = true;
+const user = false;
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState();
   return (
