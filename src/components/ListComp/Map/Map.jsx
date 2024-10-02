@@ -15,7 +15,9 @@ const Map = ({ items, val }) => {
 
   return (
     <MapContainer
-      center={position}
+      center={
+        items.length === 1 ? [items[0].latitude, items[0].longitude] : position
+      }
       zoom={7}
       scrollWheelZoom={false}
       className="map"

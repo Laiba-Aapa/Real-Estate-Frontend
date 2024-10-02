@@ -10,7 +10,7 @@ const Pin = ({ item }) => {
         <div className="popup__conteiner">
           <div className="popup__img__container">
             <Link to={`/${item.id}`}>
-              <img src={item.img} alt={item.title} />
+              <img src={item.images[0]} alt={item.title} />
             </Link>
           </div>
           <div className="popup__text__container">

@@ -1,0 +1,66 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.filter h1 {
+  font-size: 24px;
+  font-weight: 300;
+}
+.filter .item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.filter .item label {
+  font-size: 14px;
+}
+.filter .item input, .filter .item select {
+  padding: 10px;
+  width: 100px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.filter .filter__top .item input {
+  width: 100%;
+}
+.filter .filter__bottom {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 738px) {
+  .filter .filter__bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.filter .filter__bottom button {
+  width: 100px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background: #fece51;
+}
+@media (max-width: 450px) {
+  .filter .filter__bottom button {
+    width: 80px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background: #fece51;
+    height: 44px;
+  }
+}
+.filter .filter__bottom button img {
+  width: 24px;
+  height: 24px;
+}
+.filter .filter__bottom .item.button label {
+  visibility: hidden;
+}
+.filter .filter__bottom .filter__left, .filter .filter__bottom .filter__right {
+  display: flex;
+  gap: 20px;
+}/*# sourceMappingURL=filter.css.map */

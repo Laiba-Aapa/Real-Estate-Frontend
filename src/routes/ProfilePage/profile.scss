@@ -62,6 +62,14 @@
                     display: flex;
                     gap: 20px;
                 }
+                .logout__btn{
+                    background: teal;
+                    color: white;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    border: none;
+                    width: 100px;
+                }
                 img{
                     height: 40px;
                     width: 40px;

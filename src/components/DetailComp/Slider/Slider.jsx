@@ -51,7 +51,7 @@ const Slider = ({ images }) => {
         <img src={images[0]} alt="" onClick={() => setImageIndex(0)} />
       </div>
       <div className="slider__right">
-        {images.slice(1).map((img, index) => (
+        {images.slice(1, 4).map((img, index) => (
           <img src={img} key={index} onClick={() => setImageIndex(index + 1)} />
         ))}
       </div>

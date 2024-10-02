@@ -1,0 +1,82 @@
+.banner {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+.banner .banner__text {
+  flex: 3;
+}
+.banner .banner__text .banner__text__wrapper {
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  .banner .banner__text .banner__text__wrapper {
+    padding: 0;
+  }
+}
+@media (max-width: 738px) {
+  .banner .banner__text .banner__text__wrapper {
+    justify-content: flex-start;
+  }
+}
+.banner .banner__text .banner__text__wrapper .title {
+  font-size: 64px;
+}
+@media (max-width: 1366px) {
+  .banner .banner__text .banner__text__wrapper .title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 738px) {
+  .banner .banner__text .banner__text__wrapper .title {
+    font-size: 35px;
+  }
+}
+.banner .banner__text .banner__text__wrapper .boxes {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 738px) {
+  .banner .banner__text .banner__text__wrapper .boxes {
+    display: none;
+  }
+}
+.banner .banner__text .banner__text__wrapper .boxes .box h1 {
+  font-size: 36px;
+}
+@media (max-width: 1366px) {
+  .banner .banner__text .banner__text__wrapper .boxes .box h1 {
+    font-size: 32px;
+  }
+}
+.banner .banner__text .banner__text__wrapper .boxes .box h2 {
+  font-size: 20px;
+  font-weight: 300;
+}
+.banner .banner__img__container {
+  flex: 2;
+  background: #fcf5f3;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .banner .banner__img__container {
+    display: none;
+  }
+}
+.banner .banner__img__container img {
+  width: 115%;
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 1366px) {
+  .banner .banner__img__container img {
+    width: 105%;
+  }
+}/*# sourceMappingURL=HomePage.css.map */

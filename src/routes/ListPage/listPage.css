@@ -1,0 +1,79 @@
+.list__page {
+  display: flex;
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  .list__page {
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+}
+.list__page .list__container {
+  flex: 3;
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  .list__page .list__container {
+    flex: none;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+.list__page .list__container .wrapper {
+  height: 100%;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 50px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+}
+.list__page .list__container .wrapper::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+@media (max-width: 738px) {
+  .list__page .list__container .wrapper {
+    gap: 35px;
+  }
+}
+.list__page .map__container {
+  flex: 2;
+  height: 100%;
+  width: 100%;
+  background: #fcf5f3;
+}
+@media (max-width: 1024px) {
+  .list__page .map__container {
+    flex: none;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+}
+
+.leaflet-popup-content {
+  width: 200px !important;
+}
+
+/* Blinking effect */
+.no-post-message {
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  animation: blink 1s infinite; /* Blinking effect with 1 second interval */
+}
+
+/* Keyframes for the blinking effect */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  } /* Fully visible */
+  50% {
+    opacity: 0;
+  } /* Hidden */
+}/*# sourceMappingURL=listPage.css.map */
